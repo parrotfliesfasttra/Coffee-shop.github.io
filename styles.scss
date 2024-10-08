@@ -1,0 +1,223 @@
+@mixin button-cart-and-profile-gamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    &:hover {
+        box-shadow: 0 0 5px 1px grey;
+    }
+
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+
+    .hamburger-menu {
+        display: none;
+
+        @media screen and (max-width: 715px) {
+            @include button-cart-and-profile-gamburger;
+            margin-left: 20px;
+        }
+    }
+
+    .logo {
+        margin-left: 20px;
+        font-size: 16px;
+        font-weight: 700;
+
+        &:hover {
+            color: orange;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 10px;
+        }
+    }
+
+    nav {
+        margin-left: auto;
+
+        .menu-list {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+
+            li {
+                a {
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        color: orange;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .cart-and-profile {
+        display: flex;
+        margin-left: 100px;
+        margin-right: 20px;
+        gap: 10px;
+
+        >.cart {
+            @include button-cart-and-profile-gamburger;
+        }
+
+        >.profile {
+            @include button-cart-and-profile-gamburger;
+        }
+    }
+
+    @media screen and (max-width: 715px) {
+        nav {
+            display: none;
+        }
+        .cart-and-profile {
+            margin-left: auto;
+        }
+    }
+
+
+
+}
+
+.main-container {
+    min-height: calc(100vh - 160px);
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    margin: 20px auto;
+    max-width: 1340px;
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 20px;
+
+        .product {
+            position: relative;
+            height: 400px;
+            width: 319.5px;
+            background-color: white;
+            border-radius: 10px;
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px 10px 0 0;
+            }
+            .name {
+                margin: 20px 20px 0 20px;
+                font-size: 20px;
+            }
+            .description {
+                margin: 10px 20px 0 20px;
+                font-size: 14px;
+            }
+            .old-price {
+                margin: 20px 20px 0 20px;
+                font-size: 16px;
+                text-decoration: line-through;
+                color: grey;
+            }
+            .price {
+                margin: 0 20px 0 20px;
+                font-size: 18px;
+                font-weight: 500;
+                color: red;
+            }
+            .add-to-cart {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                background-color: white;
+                border: 1px solid gray;
+                border-radius: 7px;
+                width: 60px;
+                height: 40px;
+                bottom: 15px;
+                right: 15px;
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                &:hover {
+                    box-shadow: 0 0 5px 1px gray;
+                }
+            }
+
+            &:hover {
+                box-shadow: 0 0 5px 1px gray;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1380px) {
+        max-width: 1000px;
+        
+    }
+
+    @media screen and (max-width: 1000px) {
+        max-width: 660px;
+    }
+
+    @media screen and (max-width: 660px) {
+        max-width: 320px;
+    }
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+
+    .name {
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 20px;
+    }
+
+    ;
+
+    .year {
+        color: gray;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 10px;
+    }
+}

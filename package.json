@@ -1,0 +1,15 @@
+{
+  "name": "coffee-shop-use-scss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch styles.scss styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "coffee-shop-use-scss": "file:",
+    "sass": "^1.79.4"
+  }
+}

@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F2F2F2;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 80px;
+}
+.header-content .hamburger-menu {
+  display: none;
+}
+@media screen and (max-width: 715px) {
+  .header-content .hamburger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  .header-content .hamburger-menu:hover {
+    box-shadow: 0 0 5px 1px grey;
+  }
+  .header-content .hamburger-menu svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+.header-content .logo {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.header-content .logo:hover {
+  color: orange;
+}
+@media screen and (max-width: 400px) {
+  .header-content .logo {
+    font-size: 10px;
+  }
+}
+.header-content nav {
+  margin-left: auto;
+}
+.header-content nav .menu-list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.header-content nav .menu-list li a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+.header-content nav .menu-list li a:hover {
+  color: orange;
+}
+.header-content .cart-and-profile {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 20px;
+  gap: 10px;
+}
+.header-content .cart-and-profile > .cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.header-content .cart-and-profile > .cart:hover {
+  box-shadow: 0 0 5px 1px grey;
+}
+.header-content .cart-and-profile > .cart svg {
+  width: 30px;
+  height: 30px;
+}
+.header-content .cart-and-profile > .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.header-content .cart-and-profile > .profile:hover {
+  box-shadow: 0 0 5px 1px grey;
+}
+.header-content .cart-and-profile > .profile svg {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 715px) {
+  .header-content nav {
+    display: none;
+  }
+  .header-content .cart-and-profile {
+    margin-left: auto;
+  }
+}
+
+.main-container {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  margin: 20px auto;
+  max-width: 1340px;
+}
+.main-content .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+.main-content .products .product {
+  position: relative;
+  height: 400px;
+  width: 319.5px;
+  background-color: white;
+  border-radius: 10px;
+}
+.main-content .products .product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.main-content .products .product .name {
+  margin: 20px 20px 0 20px;
+  font-size: 20px;
+}
+.main-content .products .product .description {
+  margin: 10px 20px 0 20px;
+  font-size: 14px;
+}
+.main-content .products .product .old-price {
+  margin: 20px 20px 0 20px;
+  font-size: 16px;
+  text-decoration: line-through;
+  color: grey;
+}
+.main-content .products .product .price {
+  margin: 0 20px 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: red;
+}
+.main-content .products .product .add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 7px;
+  width: 60px;
+  height: 40px;
+  bottom: 15px;
+  right: 15px;
+}
+.main-content .products .product .add-to-cart svg {
+  width: 30px;
+  height: 30px;
+}
+.main-content .products .product .add-to-cart:hover {
+  box-shadow: 0 0 5px 1px gray;
+}
+.main-content .products .product:hover {
+  box-shadow: 0 0 5px 1px gray;
+}
+@media screen and (max-width: 1380px) {
+  .main-content {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .main-content {
+    max-width: 660px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .main-content {
+    max-width: 320px;
+  }
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+}
+.footer-content .name {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.footer-content .year {
+  color: gray;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-content">
+                <div class="hamburger-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                        <path
+                            d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="logo">
+                    <h1>Coffee Shop</h1>
+                </div>
+                <nav>
+                    <ul class="menu-list">
+                        <li> <a href="">Home</a></li>
+                        <li> <a href="">Menu</a></li>
+                        <li> <a href="">About</a></li>
+                        <li> <a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-and-profile">
+                    <div class="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                            <path
+                                d="M104,216a16,16,0,1,1-16-16A16,16,0,0,1,104,216Zm88-16a16,16,0,1,0,16,16A16,16,0,0,0,192,200ZM239.71,74.14l-25.64,92.28A24.06,24.06,0,0,1,191,184H92.16A24.06,24.06,0,0,1,69,166.42L33.92,40H16a8,8,0,0,1,0-16H40a8,8,0,0,1,7.71,5.86L57.19,64H232a8,8,0,0,1,7.71,10.14ZM221.47,80H61.64l22.81,82.14A8,8,0,0,0,92.16,168H191a8,8,0,0,0,7.71-5.86Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                            <path
+                                d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <div class="main-content">
+                <div class="products">
+
+                    <div class="product">
+                        <img src="./coffee_1.jpg" alt="coffee_1">
+                        <p class="name">Cappuccino</p>
+                        <p class="description">
+                            A cappuccino is a rich coffee drink made with equal parts espresso, steamed milk, and frothy
+                            milk foam, often topped with cocoa.
+                        </p>
+                        <p class="old-price">$4.99</p>
+                        <p class="price">$3.99</p>
+                        <button class="add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                                <path
+                                    d="M104,216a16,16,0,1,1-16-16A16,16,0,0,1,104,216Zm88-16a16,16,0,1,0,16,16A16,16,0,0,0,192,200ZM239.71,74.14l-25.64,92.28A24.06,24.06,0,0,1,191,184H92.16A24.06,24.06,0,0,1,69,166.42L33.92,40H16a8,8,0,0,1,0-16H40a8,8,0,0,1,7.71,5.86L57.19,64H232a8,8,0,0,1,7.71,10.14ZM221.47,80H61.64l22.81,82.14A8,8,0,0,0,92.16,168H191a8,8,0,0,0,7.71-5.86Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="product">
+                        <img src="./coffee_2.jpg" alt="coffee_2">
+                        <p class="name">Espresso</p>
+                        <p class="description">
+                            A concentrated coffee brewed by forcing hot water through finely-ground coffee beans,
+                            serving as the base for many coffee drinks.
+                        </p>
+                        <p class="old-price">$4.99</p>
+                        <p class="price">$3.99</p>
+                        <button class="add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                                <path
+                                    d="M104,216a16,16,0,1,1-16-16A16,16,0,0,1,104,216Zm88-16a16,16,0,1,0,16,16A16,16,0,0,0,192,200ZM239.71,74.14l-25.64,92.28A24.06,24.06,0,0,1,191,184H92.16A24.06,24.06,0,0,1,69,166.42L33.92,40H16a8,8,0,0,1,0-16H40a8,8,0,0,1,7.71,5.86L57.19,64H232a8,8,0,0,1,7.71,10.14ZM221.47,80H61.64l22.81,82.14A8,8,0,0,0,92.16,168H191a8,8,0,0,0,7.71-5.86Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="product">
+                        <img src="./coffee_3.jpg" alt="coffee_3">
+                        <p class="name">Americano</p>
+                        <p class="description">
+                            Made by diluting a shot of espresso with hot water, giving it a similar strength to drip
+                            coffee but with a different flavor profile.
+                        </p>
+                        <p class="old-price">$4.99</p>
+                        <p class="price">$3.99</p>
+                        <button class="add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                                <path
+                                    d="M104,216a16,16,0,1,1-16-16A16,16,0,0,1,104,216Zm88-16a16,16,0,1,0,16,16A16,16,0,0,0,192,200ZM239.71,74.14l-25.64,92.28A24.06,24.06,0,0,1,191,184H92.16A24.06,24.06,0,0,1,69,166.42L33.92,40H16a8,8,0,0,1,0-16H40a8,8,0,0,1,7.71,5.86L57.19,64H232a8,8,0,0,1,7.71,10.14ZM221.47,80H61.64l22.81,82.14A8,8,0,0,0,92.16,168H191a8,8,0,0,0,7.71-5.86Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="product">
+                        <img src="./coffee_4.jpg" alt="coffee_4">
+                        <p class="name">Latte</p>
+                        <p class="description">
+                            A creamy beverage made with one shot of espresso and steamed milk, topped with a small
+                            amount of milk foam.
+                        </p>
+                        <p class="old-price">$4.99</p>
+                        <p class="price">$3.99</p>
+                        <button class="add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                                <path
+                                    d="M104,216a16,16,0,1,1-16-16A16,16,0,0,1,104,216Zm88-16a16,16,0,1,0,16,16A16,16,0,0,0,192,200ZM239.71,74.14l-25.64,92.28A24.06,24.06,0,0,1,191,184H92.16A24.06,24.06,0,0,1,69,166.42L33.92,40H16a8,8,0,0,1,0-16H40a8,8,0,0,1,7.71,5.86L57.19,64H232a8,8,0,0,1,7.71,10.14ZM221.47,80H61.64l22.81,82.14A8,8,0,0,0,92.16,168H191a8,8,0,0,0,7.71-5.86Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="product">
+                        <img src="./coffee_5.jpg" alt="coffee_5">
+                        <p class="name">Flat White</p>
+                        <p class="description">
+                            Similar to a latte, but with a higher ratio of coffee to milk and a velvety microfoam
+                            texture, originating from Australia or New Zealand.
+                        </p>
+                        <p class="old-price">$4.99</p>
+                        <p class="price">$3.99</p>
+                        <button class="add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                                <path
+                                    d="M104,216a16,16,0,1,1-16-16A16,16,0,0,1,104,216Zm88-16a16,16,0,1,0,16,16A16,16,0,0,0,192,200ZM239.71,74.14l-25.64,92.28A24.06,24.06,0,0,1,191,184H92.16A24.06,24.06,0,0,1,69,166.42L33.92,40H16a8,8,0,0,1,0-16H40a8,8,0,0,1,7.71,5.86L57.19,64H232a8,8,0,0,1,7.71,10.14ZM221.47,80H61.64l22.81,82.14A8,8,0,0,0,92.16,168H191a8,8,0,0,0,7.71-5.86Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="product">
+                        <img src="./coffee_6.jpg" alt="coffee_6">
+                        <p class="name">Mocha</p>
+                        <p class="description">
+                            A delicious blend of espresso, steamed milk, and chocolate syrup, often topped with whipped
+                            cream, perfect for chocolate lovers.
+                        </p>
+                        <p class="old-price">$4.99</p>
+                        <p class="price">$3.99</p>
+                        <button class="add-to-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 256 256">
+                                <path
+                                    d="M104,216a16,16,0,1,1-16-16A16,16,0,0,1,104,216Zm88-16a16,16,0,1,0,16,16A16,16,0,0,0,192,200ZM239.71,74.14l-25.64,92.28A24.06,24.06,0,0,1,191,184H92.16A24.06,24.06,0,0,1,69,166.42L33.92,40H16a8,8,0,0,1,0-16H40a8,8,0,0,1,7.71,5.86L57.19,64H232a8,8,0,0,1,7.71,10.14ZM221.47,80H61.64l22.81,82.14A8,8,0,0,0,92.16,168H191a8,8,0,0,0,7.71-5.86Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="name">Coffee Shop</p>
+                <p class="year">2024</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
